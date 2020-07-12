@@ -25,14 +25,6 @@ for li in soup.find_all('li'):
     for a in li.find_all('a',href=True):
         if a.text and name is not None:
             print(name.text,'\n',a['href'])
-        
-
-
-    # for a in soup.find_all("div", {"class": "col-xl-3 offset-lg-1 offset-xl-0 col-lg-4 col-6"}):
-    #     brand_url = a.find('a')['href']
-    #     brand_text = a.find("a",{"class":"brand-link"}).text
-    #     print(brand_text,brand_url)
-    #     print()
     #     csv_writer.writerow([brand_text]+[brand_url])
 
 # csv_file.close()
